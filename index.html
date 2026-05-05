@@ -40,10 +40,6 @@
       </p>
       <div class="hero__actions fade-up">
         <a href="#formulario" class="btn btn--ghost">Quero Agendar uma Avaliação</a>
-        <span class="hero__scroll" aria-hidden="true">
-          <span class="hero__scroll-line"></span>
-          Role para explorar
-        </span>
       </div>
     </div>
   </section>
@@ -57,10 +53,9 @@
       <div class="procedimentos__header">
         <div class="procedimentos__header-left">
           <span class="eyebrow">Tratamentos</span>
-          <h2 class="section-title">Sob Medida<br>para Você.</h2>
+          <h2 class="section-title">Sob Medida para Você.</h2>
           <div class="section-divider"></div>
         </div>
-        <a href="#formulario" class="btn btn--outline-dark">Ver todos os tratamentos</a>
       </div>
 
       <div class="bento">
@@ -76,8 +71,8 @@
               data-depois="img/depois1.png"
               data-state="antes"
             />
-            <button class="bento__toggle" aria-label="Ver resultado">Resultado</button>
           </div>
+          <button class="bento__toggle" aria-label="Ver antes e depois">Antes e Depois</button>
           <div class="bento__body">
             <span class="bento__tag">O Premium</span>
             <h3 class="bento__title">Boom Perfection</h3>
@@ -88,7 +83,6 @@
               <strong>Para quem:</strong> Quem busca volume imediato aliado à produção de colágeno
               a longo prazo. O "efeito preenchimento" com sustentação.
             </p>
-            <a href="#formulario" class="btn btn--outline-dark" style="margin-top:.5rem; align-self:flex-start;">Saiba mais</a>
           </div>
         </article>
 
@@ -103,8 +97,8 @@
               data-depois="img/depois2.png"
               data-state="antes"
             />
-            <button class="bento__toggle" aria-label="Ver resultado">Resultado</button>
           </div>
+          <button class="bento__toggle" aria-label="Ver antes e depois">Antes e Depois</button>
           <div class="bento__body">
             <span class="bento__tag">O Queridinho</span>
             <h3 class="bento__title">Bronze Perfection</h3>
@@ -130,8 +124,8 @@
               data-depois="img/depois3.png"
               data-state="antes"
             />
-            <button class="bento__toggle" aria-label="Ver resultado">Resultado</button>
           </div>
+          <button class="bento__toggle" aria-label="Ver antes e depois">Antes e Depois</button>
           <div class="bento__body">
             <span class="bento__tag">Inteligente</span>
             <h3 class="bento__title">Botox Personalizado</h3>
@@ -143,11 +137,14 @@
               <strong>Manutenção:</strong> Aplicações fracionadas para manter o rosto sempre
               jovem, sem o aspecto "congelado".
             </p>
-            <a href="#formulario" class="btn btn--outline-dark" style="margin-top:.5rem; align-self:flex-start;">Agendar consulta</a>
           </div>
         </article>
 
       </div><!-- /.bento -->
+
+      <div class="bento__cta fade-up">
+        <a href="#formulario" class="btn btn--outline-dark">Ver todos os tratamentos</a>
+      </div>
     </div>
   </section>
 
@@ -239,7 +236,10 @@
     <div class="container sobre__inner">
 
       <div class="sobre__img-wrap fade-up">
-        <img class="sobre__img" src="img/imgdra.png" alt="Dra. Raele Alves" loading="lazy" />
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/dramb.png" />
+          <img class="sobre__img" src="img/imgdra.png" alt="Dra. Raele Alves" loading="lazy" />
+        </picture>
         <div class="sobre__stats">
           <div class="stat">
             <span class="stat__num">1.000+</span>
